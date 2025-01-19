@@ -1,0 +1,105 @@
+/* General App Styling */
+.app-container {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background-color: #E6E6FA;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styling */
+.app-header {
+  background-color: #73737D; /* A professional green */
+  color: white;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Section */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Footer Styling */
+.app-footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Button Styling */
+button {
+  background-color: #ccc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Input Styling */
+input[type="file"] {
+  margin: 20px 0;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Extracted Text & Summary Styling */
+.extracted-text, .summary {
+  background: #f0f0f0;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  white-space: pre-wrap; /* Allows wrapping of long text */
+  text-align: left;
+}
+
+/* Highlighted Summary Section */
+.summary {
+  background: #e8f5e9; /* Light green for a success vibe */
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .extracted-text, .summary {
+    font-size: 0.9rem;
+  }
+}
